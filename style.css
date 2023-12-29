@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu-heading {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+   
+    padding-bottom: 10px;
+}
+
+.menu-boxes {
+    display: flex;
+    justify-content: center;
+   
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.menu-subheading{
+    display: inline-block;
+    text-align: right;
+    border: 2px solid #333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    
+    
+}
+.one{
+    background-color: palevioletred;
+}
+.two{
+    background-color: red;
+}
+.three{
+    background-color: salmon;
+}
+
+.menu-text {
+    text-align: left;
+    padding: 0 10px;
+}
+.menu-box {
+    flex: 0 1 30%; /* Adjust the width as needed */
+    width: 300px;
+    display: inline-block;
+    border: 2px solid #333;
+    margin: 0 10px;
+    padding: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    background-color: grey;
+}
+.menu-items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .menu-box {
+        flex: 0 1 45.5%; /* Adjust the width for tablet screens */
+    }
+    
+    .menu-box-three{
+        flex: 0 1 100%;
+        margin: 25px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .menu-box {
+        flex: 0 1 100%; /* Full width for mobile screens */
+        margin: 0 0 20px 0;
+        margin-top: 20px;
+    }
+}
